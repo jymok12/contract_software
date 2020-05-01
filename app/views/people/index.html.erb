@@ -1,0 +1,28 @@
+<h1>Current Customers</h1>
+ 
+
+<%= link_to 'New Customer', new_person_path %>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name </th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @people.each do |person| %>
+    <tr>
+      <td><%= person.firstname %></td>
+      <td><%= person.lastname %></td>
+      <td><%= person.email %></td>
+      <td><%= person.phone %></td>
+      <td><%= link_to 'Show', person_path(person) %></td>
+      <td><%= link_to 'Edit', edit_person_path(person) %></td>
+      <td><%= link_to 'Delete', person_path(person), method: :delete, data:{confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Back', home_index_path %>
