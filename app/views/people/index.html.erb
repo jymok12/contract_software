@@ -5,19 +5,24 @@
 
 <table>
   <tr>
-    <th>First Name</th>
-    <th>Last Name </th>
-    <th>Email</th>
+    <th>Customer</th>
+    <th>Date</th>
+    <th>Job Site </th>
+    <th>Attn </th>
     <th>Tel</th>
+    <th>Email</th>
+    <th>
     <th colspan="2"></th>
   </tr>
  
   <% @people.each do |person| %>
     <tr>
-      <td><%= person.firstname %></td>
-      <td><%= person.lastname %></td>
-      <td><%= person.email %></td>
+      <td><%= person.customer %></td>
+      <td><%= person.date %></td>
+      <td><%= person.jobsite %></td>
+      <td><%= person.attn %></td>
       <td><%= person.phone %></td>
+      <td><%= person.email %></td>
       <td><%= link_to 'Show', person_path(person) %></td>
       <td><%= link_to 'Edit', edit_person_path(person) %></td>
       <td><%= link_to 'Delete', person_path(person), method: :delete, data:{confirm: 'Are you sure?'} %></td>

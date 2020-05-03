@@ -12,25 +12,35 @@
         </div>
     <% end %>
     <p>
-        <%= form.label :firstname, "First Name" %><br>
-        <%= form.text_field :firstname %>
+    <%= form.label :customer, "Customer" %><br>
+    <%= form.text_field :customer %>
+</p>
+
+    <p>
+        <%= form.label :date, "Date" %><br>
+        <%= form.text_field :date %>
     </p>
+
+    <p>
+        <%= form.label :jobsite, "Job Site" %><br>
+        <%= form.text_field :jobsite %>
+    </p>
+
+    <p>
+        <%= form.label :attn, "ATTN" %><br>
+        <%= form.text_field :attn %>
+    </p>  
     
     <p>
-        <%= form.label :lastname, "Last Name" %><br>
-        <%= form.text_field :lastname %>
-    </p>
+        <%= form.label :phone, "Tel" %><br>
+        <%= form.text_field :phone %>
+    </p>       
     
     <p>
         <%= form.label :email, "email" %><br>
         <%= form.text_field :email %>
     </p>
-
-    <p>
-        <%= form.label :phone, "Tel" %><br>
-        <%= form.text_field :phone %>
-    </p>       
-             
+        
     <p>
         <%= submit_tag("Submit") %>
     </p>

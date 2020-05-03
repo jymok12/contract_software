@@ -13,10 +13,12 @@
 ActiveRecord::Schema.define(version: 2020_05_01_003048) do
 
   create_table "people", force: :cascade do |t|
-    t.string "firstname"
-    t.string "lastname"
-    t.string "email"
+    t.string "customer"
+    t.string "date"
+    t.string "jobsite"
+    t.string "attn"
     t.string "phone"
+    t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

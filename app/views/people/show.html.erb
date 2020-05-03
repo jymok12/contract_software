@@ -1,11 +1,26 @@
 <p>
-    <strong> First Name: </strong>
-    <%= @person.firstname %>
+    <strong> Customer: </strong>
+    <%= @person.customer %>
 </p>
 
 <p>
-    <strong> Last Name: </strong>
-    <%= @person.lastname %>
+    <strong> Date: </strong>
+    <%= @person.date %>
+</p>
+
+<p>
+    <strong> Job Site: </strong>
+    <%= @person.jobsite %>
+</p>
+
+<p>
+    <strong> Attn: </strong>
+    <%= @person.attn %>
+</p>
+
+<p>
+    <strong> Tel: </strong>
+    <%= @person.phone %>
 </p>
 
 <p>
@@ -13,9 +28,5 @@
     <%= @person.email %>
 </p>
 
-<p>
-    <strong> Tel: </strong>
-    <%= @person.phone %>
-</p>
 
 <%= link_to 'Back', people_path %>
