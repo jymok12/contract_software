@@ -2,13 +2,13 @@
  
 <%= form_with(model: @person, local: true) do |form| %>
     <p>
-        <%= form.label :firstname, "First Name" %><br>
-        <%= form.text_field :firstname %>
+        <%= form.label :customer, "Customer" %><br>
+        <%= form.text_field :customer %>
     </p>
-    
+
     <p>
-        <%= form.label :lastname, "Last Name" %><br>
-        <%= form.text_field :lastname %>
+        <%= form.label :date, "Date" %><br>
+        <%= form.text_field :date %>
     </p>
 
     <p>
