@@ -45,9 +45,13 @@
         <%= form.text_field :email %>
     </p>
 
-    
     <p>
-        <%= submit_tag("Submit") %>
+        <%= form.submit "Next Step", :name => "next_step" %>
+    </p>
+
+    <p>
+        <%= submit_tag "Save" %>
+
     </p>
 
 <% end %>
