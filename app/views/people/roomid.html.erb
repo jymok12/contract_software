@@ -1,0 +1,18 @@
+<h1> Room </h1>
+
+<%= form_with scope: :roomid , url: roomid_people_path, local: true do |form| %>
+    <p>
+        <b><%= form.label :gender, "Location" %></b>
+        <%= form.select(:gender, [ 'Male', 'Female' ], {}, { :class => 'select' }) %>
+    </p>
+
+    <p>
+        <b> Does this location have an ID ?</b><br />
+        <fieldset>
+        <%= form.radio_button :choice, 'Yes' %> Yes <br />
+        <%= form.radio_button :choice, 'No' %> No <br />
+        </fieldset>
+    </p>
+
+    
+<% end %>

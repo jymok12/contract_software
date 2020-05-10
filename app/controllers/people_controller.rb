@@ -15,8 +15,8 @@ class PeopleController < ApplicationController
         @person = Person.new(person_params)
 
         if params[:next_step]
-            redirect_to room_people_path
-
+            redirect_to roomid_people_path
+        
         elsif @person.save
             redirect_to @person
 
@@ -47,6 +47,7 @@ class PeopleController < ApplicationController
     end
 private
     def person_params
-        params.require(:person).permit(:customer, :date, :jobsite, :attn, :phone, :email, :next_step)
+        params.require(:person).permit(:customer, :date, :jobsite, :attn, :phone, :email, :next_step, :gender, :choice)
     end
 end
+
